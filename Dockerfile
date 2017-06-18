@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     gconf2 \
     python \
     gvfs-bin \
-    xdg-utils
+    xdg-utils \
+    libgnome-keyring-dev 
 
 RUN wget -O mail.deb "https://edgehill.nylas.com/download?platform=linux-deb" && \
     dpkg -i mail.deb && \
